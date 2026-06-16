@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: /sitemap.xml
+Sitemap: https://blossom-braids-beauty.vercel.app/sitemap.xml
