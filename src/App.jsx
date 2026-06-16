@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-const Home = lazy(() => import('./pages/Home'))
+const Home = lazy(() => import('./Pages/Home'))
 
 function App() {
   useEffect(() => {
