@@ -16,13 +16,12 @@ import FounderStory from '../components/FounderStory'
 import CTA from '../components/CTA'
 import Footer from '../components/Footer'
 import WhatsAppButton from '../components/WhatsAppButton'
-import LuxuryLoadingScreen from '../components/LuxuryLoadingScreen'
+// LuxuryLoadingScreen removed from initial load to improve UX and eliminate preloader
 import CursorGlow from '../components/CursorGlow'
 import ScrollProgressIndicator from '../components/ScrollProgressIndicator'
 import BookingModal from '../components/BookingModal'
 
 export default function Home() {
-  const [loading, setLoading] = useState(true)
   const [bookingOpen, setBookingOpen] = useState(false)
 
   return (
@@ -119,17 +118,7 @@ export default function Home() {
 
       <Navbar />
 
-      {loading && (
-        <LuxuryLoadingScreen
-          onFinish={() => setLoading(false)}
-        />
-      )}
-
-      <main
-        style={{
-          visibility: loading ? 'hidden' : 'visible',
-        }}
-      >
+      <main>
         <CursorGlow />
         <ScrollProgressIndicator />
 
@@ -183,7 +172,7 @@ export default function Home() {
     paddingBottom: "var(--section-gap)",
   }}
 >
-  <CTA onBook={() => setBookingOpen(true)} />
+          <CTA onBook={() => setBookingOpen(true)} />
 </section>
 
 <section

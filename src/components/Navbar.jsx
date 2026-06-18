@@ -8,8 +8,9 @@ export default function Navbar() {
   return (
     <header className="site-header" role="banner">
       <nav className="nav container" aria-label="Primary Navigation">
-        <a className="brand" href="/">
-          <img src="/logo.png" alt="Blossom Braids & Beauty logo" width="140" height="40" />
+        <a className="brand" href="/" style={{display:'flex',alignItems:'center',gap:12,textDecoration:'none'}}>
+          <img src="/logo.png" alt="Blossom Braids & Beauty logo" width="110" height="32" style={{display:'block'}} />
+          <span style={{fontFamily:'Playfair Display, serif',color:'var(--color-charcoal)',fontSize:16}}>Blossom Braids & Beauty</span>
         </a>
 
         <button

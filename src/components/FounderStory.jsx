@@ -5,7 +5,7 @@ export default function FounderStory() {
   return (
     <section id="founder-story" className="section">
       <div className="container narrow">
-        <motion.h3 className="section-title" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} style={{ textTransform: 'uppercase', fontWeight: 700 }}>
+        <motion.h3 className="section-title" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} style={{ textAlign: 'center', textTransform: 'uppercase', fontWeight: 700 }}>
           A NOTE FROM BLOSSOM
         </motion.h3>
 

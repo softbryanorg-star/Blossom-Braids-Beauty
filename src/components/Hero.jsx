@@ -2,42 +2,28 @@ import React, { useMemo } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { Link as ScrollLink } from 'react-scroll'
 
-const title = 'BLOSSOM BRAIDS & BEAUTY'
+const line1 = 'Blossom Braids'
+const line2 = '& Beauty'
 
 export default function Hero({ onOpenBooking }) {
   const reduce = useReducedMotion()
 
-  const letters = useMemo(() => title.split(''), [])
-
   const container = {
     hidden: { opacity: 0 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      transition: { staggerChildren: 0.04, delayChildren: 0.15 * i }
-    })
+    visible: { opacity: 1, transition: { staggerChildren: 0.06 } }
   }
 
-  const letter = {
+  const line = {
     hidden: { opacity: 0, y: 18 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.2,0.8,0.2,1] } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.2,0.8,0.2,1] } }
   }
 
   return (
     <section id="hero" className="hero container" aria-label="Hero">
       <div className="hero-inner">
-        <motion.h1
-          className="hero-title"
-          aria-label={title}
-          initial={reduce ? 'visible' : 'hidden'}
-          animate="visible"
-          variants={container}
-          role="heading"
-        >
-          {letters.map((ch, idx) => (
-            <motion.span key={idx} variants={letter} className="hero-letter">
-              {ch === ' ' ? '\u00A0' : ch}
-            </motion.span>
-          ))}
+        <motion.h1 className="hero-title" aria-label={`${line1} ${line2}`} initial={reduce ? 'visible' : 'hidden'} animate="visible" variants={container} role="heading" style={{lineHeight:1.02}}>
+          <motion.div variants={line} style={{display:'block'}}>{line1}</motion.div>
+          <motion.div variants={line} style={{display:'block', fontSize:'0.9em', marginTop:6}}>{line2}</motion.div>
         </motion.h1>
 
         <motion.p className="hero-sub" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9, duration: 0.6 }}>

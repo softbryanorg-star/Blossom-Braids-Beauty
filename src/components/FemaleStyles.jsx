@@ -12,7 +12,7 @@ const styles = [
   { key: 'Knotless Braids', img: '/images/womenservice4.png' },
   { key: 'Boho Braids', img: '/images/womenservice5.png' },
   { key: 'All Back', img: '/images/womenservice6.png' },
-  { key: "Kids' Braids", img: '/images/womenservice7.png' }
+  { key: "Ghanian weaving", img: '/images/womenservice7.png' }
 ]
 
 export default function FemaleStyles() {

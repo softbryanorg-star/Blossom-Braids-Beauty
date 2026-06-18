@@ -13,12 +13,12 @@ export default function CTA({ onBook }) {
 
   return (
     <section className="cta" id="book">
-      <div className="container">
+      <div className="container" style={{ textAlign: 'center' }}>
         <motion.h2 initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           Ready for Your Next Look?
         </motion.h2>
 
-        <motion.p className="lead" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.08 }}>
+        <motion.p className="lead" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.08 }} style={{ margin: '12px auto 18px', maxWidth: 720 }}>
           Book your appointment today and let Blossom Braids & Beauty create a hairstyle you'll love and wear with confidence.
         </motion.p>
 
