@@ -6,6 +6,8 @@ git add .
 git commit -m "What you changed"
 git push origin main
 
+2348164349452
+
    │
  4 │ const Home = lazy(() => import("./pages/Home"));
    │                                ───────┬──────  
