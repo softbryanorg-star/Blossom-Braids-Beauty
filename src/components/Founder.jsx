@@ -7,7 +7,7 @@ export default function Founder() {
     <section id="founder" className="section" aria-labelledby="founder-heading">
       <div className="container" style={{textAlign:'center'}}>
         <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <h2 id="founder-heading">Meet The Founder</h2>
+          <h2 id="founder-heading">Meet Your Luxury Hair Stylist</h2>
           <div style={{display:'flex',flexDirection:'column',alignItems:'center',gap:18,marginTop:18}}>
             <div style={{borderRadius:12,padding:6,background:'linear-gradient(180deg, rgba(212,180,131,0.12), transparent)'}}>
               <img src="/images/founder.png" alt="Founder portrait" loading="lazy" style={{width:220,height:220,objectFit:'cover',borderRadius:12,display:'block'}} />

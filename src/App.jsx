@@ -13,7 +13,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Suspense fallback={<div className="app-loading" aria-live="polite">Loading…</div>}>
+      <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

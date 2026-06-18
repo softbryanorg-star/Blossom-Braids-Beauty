@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link as ScrollLink } from 'react-scroll'
 import { FiMenu, FiX } from 'react-icons/fi'
 
 export default function Navbar() {
@@ -34,19 +33,13 @@ export default function Navbar() {
             ['Book', 'book']
           ].map(([label, to]) => (
             <li key={to} className="nav-item">
-              <ScrollLink
-                to={to}
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
+              <a
+                href={`#${to}`}
                 onClick={() => setOpen(false)}
                 className="nav-link"
-                activeClass="active"
-                tabIndex={0}
               >
                 {label}
-              </ScrollLink>
+              </a>
             </li>
           ))}
         </ul>
