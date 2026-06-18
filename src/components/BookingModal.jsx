@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-const WA_NUMBER = '2347025404516'
+const WA_NUMBER = '2348164349452'
 
 export default function BookingModal({ open, onClose }) {
   const [name, setName] = useState('')
