@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
-import { Link as ScrollLink } from 'react-scroll'
 
 const line1 = 'Blossom Braids'
 const line2 = '& Beauty'
@@ -43,7 +42,25 @@ export default function Hero({ onOpenBooking }) {
           </motion.button>
 
           <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.15, duration: 0.45 }}>
-            <ScrollLink to="gallery" smooth offset={-80} duration={600} className="btn ghost">View Our Work</ScrollLink>
+            <a
+              href="#gallery"
+              className="btn ghost"
+              onClick={(e) => {
+                // attempt immediate jump first
+                const el = document.getElementById('gallery')
+                const offset = 80
+                if (el) {
+                  // immediate scroll, then apply offset
+                  el.scrollIntoView({ behavior: 'auto', block: 'start' })
+                  window.scrollBy(0, -offset)
+                } else {
+                  // fallback to hash navigation
+                  window.location.hash = '#gallery'
+                }
+              }}
+            >
+              View Our Work
+            </a>
           </motion.div>
         </div>
       </div>
