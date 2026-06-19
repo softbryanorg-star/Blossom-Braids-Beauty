@@ -23,11 +23,11 @@ export default function About() {
           At Blossom Braids & Beauty, we believe every hairstyle is an
           opportunity to express confidence, beauty, and individuality.
           Our studio blends traditional technique with modern aesthetics
-          to deliver bespoke, long-lasting styles.
+          to deliver bespoke, long lasting styles.
         </motion.p>
 
         <motion.p variants={FadeUp} className="muted">
-          Location: FUTO, Owerri, Imo State
+          Location:📍 FUTO, Owerri, Imo State
         </motion.p>
       </motion.div>
     </section>

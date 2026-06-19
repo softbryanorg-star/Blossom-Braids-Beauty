@@ -13,7 +13,7 @@ export default function Footer() {
           <div style={{marginTop:12}}>
             <div className="muted">📍 FUTO, Owerri, Imo State</div>
             <div className="muted" style={{marginTop:6}}>📞 +234 816 434 9452</div>
-            <div className="muted" style={{marginTop:6}}>📧 hello@blossombraids.com</div>
+            <div className="muted" style={{marginTop:6}}>📧 Josephblossom68@gmail.com</div>
             <div className="muted" style={{marginTop:6}}>🕒 Mon–Sat: 9:00 AM – 6:00 PM</div>
           </div>
         </div>
@@ -21,7 +21,7 @@ export default function Footer() {
         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
           <a className="social-icon" href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
           <a className="social-icon" href="https://www.tiktok.com/@josephblossom6" aria-label="TikTok" target="_blank" rel="noreferrer"><FaTiktok /></a>
-          <a className="social-icon" href="mailto:hello@blossombraids.com" aria-label="Email"><FiMail /></a>
+          <a className="social-icon" href="Josephblossom68@gmail.com" aria-label="Email"><FiMail /></a>
         </div>
       </div>
     </footer>
