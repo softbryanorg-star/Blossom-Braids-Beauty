@@ -21,7 +21,7 @@ export default function Footer() {
         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
           <a className="social-icon" href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
           <a className="social-icon" href="https://www.tiktok.com/@josephblossom6" aria-label="TikTok" target="_blank" rel="noreferrer"><FaTiktok /></a>
-          <a className="social-icon" href="Josephblossom68@gmail.com" aria-label="Email"><FiMail /></a>
+          <a className="social-icon" href="mailto:Josephblossom68@gmail.com" aria-label="Email"><FiMail /></a>
         </div>
       </div>
     </footer>
